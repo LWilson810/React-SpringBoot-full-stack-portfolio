@@ -1,0 +1,65 @@
+[debug] [2023-09-09T04:59:16.963Z] ----------------------------------------------------------------------
+[debug] [2023-09-09T04:59:16.965Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-09T04:59:16.965Z] CLI Version:   12.5.2
+[debug] [2023-09-09T04:59:16.966Z] Platform:      win32
+[debug] [2023-09-09T04:59:16.966Z] Node Version:  v18.16.1
+[debug] [2023-09-09T04:59:16.967Z] Time:          Fri Sep 08 2023 21:59:16 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-09-09T04:59:16.967Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-09T04:59:16.975Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-09T04:59:16.976Z] > authorizing via signed-in user (comet12071014@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\WorkStation\My-Work\my_react_portfolio-main\public
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-09T04:59:23.999Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-09-09T04:59:25.968Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-09-09T04:59:25.968Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project jldenton-portfolio (JLDenton portfolio) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-09-09T04:59:27.060Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/jldenton-portfolio/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-09-09T04:59:27.060Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/jldenton-portfolio/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/jldenton-portfolio
+[debug] [2023-09-09T04:59:28.560Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/jldenton-portfolio/services/firebasedatabase.googleapis.com 200
+[debug] [2023-09-09T04:59:28.560Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/jldenton-portfolio/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-09-09T04:59:28.563Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/jldenton-portfolio/locations/-/instances/jldenton-portfolio-default-rtdb [none]
+[debug] [2023-09-09T04:59:29.974Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/jldenton-portfolio/locations/-/instances/jldenton-portfolio-default-rtdb 200
+[debug] [2023-09-09T04:59:29.974Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/jldenton-portfolio/locations/-/instances/jldenton-portfolio-default-rtdb {"name":"projects/256828131249/locations/us-central1/instances/jldenton-portfolio-default-rtdb","project":"projects/256828131249","databaseUrl":"https://jldenton-portfolio-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-09-09T04:59:31.725Z] >>> [apiv2][query] GET https://jldenton-portfolio-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2023-09-09T04:59:53.715Z] <<< [apiv2][status] GET https://jldenton-portfolio-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2023-09-09T04:59:53.715Z] <<< [apiv2][body] GET https://jldenton-portfolio-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for jldenton-portfolio-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-09-09T04:59:53.722Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/jldenton-portfolio/services/firestore.googleapis.com [none]
+[debug] [2023-09-09T04:59:53.722Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/jldenton-portfolio/services/firestore.googleapis.com x-goog-quota-user=projects/jldenton-portfolio
+[debug] [2023-09-09T05:00:04.763Z] *** [apiv2] error from fetch(https://serviceusage.googleapis.com/v1/projects/jldenton-portfolio/services/firestore.googleapis.com, {"headers":{},"method":"GET"}): FetchError: request to https://serviceusage.googleapis.com/v1/projects/jldenton-portfolio/services/firestore.googleapis.com failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2023-09-09T05:00:09.780Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
